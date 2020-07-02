@@ -1,6 +1,7 @@
 package br.com.regisnumata.view;
 
 import java.io.Serializable;
+import java.util.List;
 
 import javax.annotation.PostConstruct;
 import javax.faces.view.ViewScoped;
@@ -20,6 +21,8 @@ public class AlunoBean implements Serializable {
 	
 	
 	private Aluno aluno;
+	
+	private List<Aluno> alunos;
 	
 	@Inject
 	private ServicoAluno servicoAluno;
